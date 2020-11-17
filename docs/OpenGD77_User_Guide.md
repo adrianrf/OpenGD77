@@ -233,7 +233,7 @@ There are two mechanisms that can be used when connecting your computer to the r
        * The Firmware is easily installed from the Extras menu in the [CPS](#cps-software).
 ![](media/Firmware_loader-01.png)
 
-       * Choose Your radio model.                        
+       * Choose your radio model.                        
 ![](media/Firmware_loader-02.png)
 
        * If you choose **Download and Update** then you can select from the Stable or Unstable branches.         
@@ -251,9 +251,9 @@ There are two mechanisms that can be used when connecting your computer to the r
 
 ## Codeplug compatibility
 
-The official firmware for each of these radios use slightly different codeplug formats.
+The official firmware for each of these radios uses slightly different codeplug formats.
 
-Users radios other than the GD-77 will need to convert their codeplug using the tools written by Colin G4EML (see <http://www.gb3gf.co.uk/downloads.html>).
+Users of radios other than the GD-77 will need to convert their codeplug using the tools written by Colin G4EML (see <http://www.gb3gf.co.uk/downloads.html>).
 
 Specifically export their existing codeplug to CSV format, and then import those CSV files into the OpenGD77 version of Colin's tools.
 
@@ -268,11 +268,11 @@ Not all the supported radios have the same number of buttons, or the same screen
 
 Also, not all radios support all the functionalities.
 
-- The Radioddity GD-77 (aka *TYT MD-760*), has 2 buttons below the PTT. The **black** button is technically known as **SK1**, and the **blue** button is know as **SK2** and is also referred to, in this manual, as the **Function** button. This radio also has an **Orange** button at the top.
+- The Radioddity GD-77 (aka *TYT MD-760*), has 2 buttons below the PTT. The **black** button is technically known as **SK1**, and the **blue** button is known as **SK2** and is also referred to, in this manual, as the **Function** button. This radio also has an **Orange** button at the top.
 - The Baofeng RD-5R / DM-5R USB hardware will not support USB connections while the radio is transmitting, so **it is not possible** to use Hotspot mode on this radio.
 - The Baofeng RD-5R / DM-5R does not have left or right arrow buttons, so the **A/B** button is used to replace the left arrow and the **Band** button is used to replace the right arrow.
 - The Baofeng RD-5R / DM-5R does not have the **Orange** button, and its functionality has been simulated by using a **Long press** on the orange coloured **MR/VFO** button.
-- The Baofeng RD-5R / DM-5R has 2 buttons on the side, but their position is different from the GD-77 and DM-1801. The button above the PTT is used as the **Black** button on the side of the GD-77, also know as button **SK1**. The button below the PTT is used as the **Function** button, also known as **SK2**.
+- The Baofeng RD-5R / DM-5R has 2 buttons on the side, but their position is different from the GD-77 and DM-1801. The button above the PTT is used as the **Black** button on the side of the GD-77, also known as button **SK1**. The button below the PTT is used as the **Function** button, also known as **SK2**.
 - The Radioddity GD-77S does not have a keypad or screen, hence its operation is completely different from the other supported radios that have a screen (*see the appendix on [GD-77S operation](#gd-77s-operation)*).
 - The Baofeng DM-1801 / DM-860 has a dedicated **MR/VFO** button, which is used to change between Channel and VFO mode, in place of pressing the **Red** menu key.
 - The Baofeng DM-1801 / DM-860 has a dedicated **A/B** button, which is used to change between VFO A and B, in place of pressing the quick menu via the **Orange** button on the top of the radio.
@@ -336,7 +336,7 @@ By default, all Channels are set to use the **Master** power, however this setti
 
 When a Channel has a custom power setting, the power will be displayed in a **Bold font**.
 
-Increasing and descreasing the power on a Channel with a custom power setting will temporarily override the power on the Channel, but this change is not saved to the codeplug. So, changing channels will result in the temporary override being lost.
+Increasing and decreasing the power on a Channel with a custom power setting will temporarily override the power on the Channel, but this change is **not** saved to the codeplug. So, changing channels will result in the temporary override being lost.
 
 To make a **permanent** change to a Channel custom power value, you must open the [**Channel Details**](#channel-details) screen, and then exit by pressing **Function** + **Green**.
 
@@ -358,7 +358,7 @@ To access this power setting, select the **5W** power setting, then press and ho
 - The power output will only be correct after the operator has calibrated their own radio, as these radios **do not seem to have very accurate power calibration applied in the factory**.
 - Power output on settings below **1W** is **not** very accurate, because the calibration only holds data points for the **1W** and **5W** power values.
 - Between **1W** and **5W**, the PA FET output power is approximately directly proportional to the PA drive level, hence the interpolated drive levels result in *reasonably accurate* power levels for **2W**, **3W** and **4W**.
-- However, below **1W** the PA FET ouput power **is not directly proportional** to the PA drive level, and **conserably varies** between different radios. Hence the power accuracy below **1W** is at best around **80% accurate**.
+- However, below **1W** the PA FET ouput power **is not directly proportional** to the PA drive level, and **considerably varies** between different radios. Hence the power accuracy below **1W** is at best around **80% accurate**.
 - Also, the PA FET minimum operational power threshold is very close to (or sometimes even above **50mW**), so operating at this power level **can produce unwanted spurious emissions**.
 - Please confirm your power output and spectral emissions **before** using the **50mW** setting anywhere it may cause interference.
 
@@ -374,8 +374,8 @@ In FM mode the signal meter should operate all the time.
 
 *Note:*
 
-- Currently the S meter reading is **not** very accurate because the radio hardware Rx sensitivity is **not calibrated** at the factor.
-- Hence the value displayed is based on a radio with average sensitivity, individual radios may be **more or less** sensitive than average, therefore the S meter will read **higher or lower** than is absolutely correct.
+- Currently the S meter reading is **not** very accurate because the radio hardware Rx sensitivity is **not calibrated** at the factory.
+- Hence the value displayed is based on a radio with average sensitivity. Individual radios may be **more or less** sensitive than average, therefore the S meter may read **higher or lower** than is absolutely correct.
 
 ![signal meter](media/signal-meter.png)
 
@@ -427,7 +427,7 @@ The Channel screen displays the current Channel number as well as the current zo
 
 *Note:*
 
-- The Baofeng RD-5R does not have an **Orange** button. On this radio press and hold the orange coloured **MR/VFO** button to enter the Quick menu.
+- The Baofeng RD-5R does not have an **Orange** button. On this radio, press and hold the orange coloured **MR/VFO** button to enter the Quick Menu.
 
 ##### Copying a channel to VFO<!-- linebreak -->
 
@@ -477,7 +477,7 @@ The Channel screen displays the current Channel number as well as the current zo
 
 *Note:*
 
-- The Baofeng RD-5R does not have an **Orange** button. On this radio press and hold the orange coloured **MR/VFO** button to enter the Quick menu
+- The Baofeng RD-5R does not have an **Orange** button. On this radio, press and hold the orange coloured **MR/VFO** button to enter the Quick Menu.
 
 ##### VFO selection A or B<!-- linebreak -->
 
@@ -559,7 +559,7 @@ If the station has entered any data into the **APRS section** of their Brandmeis
 
 *Note:*
 
-- As the **Talker Alias** data is sent slowly as it is embedded inside the DMR audio data frames, the callsign will appear first and about half a second later the DMR ID or other text will arrive via the DMR data and be displayed.
+- As the **Talker Alias** data is sent slowly as it is embedded inside the DMR audio data frames, the callsign will appear first; about half a second later, the DMR ID or other text will arrive via the DMR data and be displayed.
 
 #### Talkgroup selection from the Rx Group list<!-- linebreak -->
 
@@ -600,7 +600,7 @@ If you want to transmit on the same *TalkGroup* as the currently received signal
 
 If the entered **TG** is in the *Digital Contacts*, the name of the **TG Contact** will be displayed, otherwise the number will be displayed *e.g.* **TG 98977**.
 
-- To return to the previous *TG* prior to manually entering the TG, press either the **Left** or **Right** arrows keys.
+- To return to the previous *TG* prior to manually entering the TG, press either the **Left** or **Right** arrow keys.
 
 When a *TG* has been **manually entered**, the display shows a **1 pixel box** around the TG display area to indicate that this TG has been manually entered, even if the *Contact / TG name* is displayed rather than the TG number.
 
@@ -637,7 +637,7 @@ Private calls can also be selected in this manner.
 
 This DMR ID will be used for transmission **until** the radio is rebooted or you enter another DMR ID via the same screen.
 
-To make the change permanent, so that its written back to the codeplug Press **Function** + **Green** instead of **Green** to confirm the number.
+To make the change permanent, so that it is written back to the codeplug, press **Function** + **Green** instead of **Green** to confirm the number.
 
 ### FM specific functionality (*VFO and Channel screens*)
 
@@ -829,7 +829,7 @@ On either the VFO or the Channel screen, press the **Green** menu key to display
 
 - To unlock the keypad, press and hold the **Function** button and press the **Star** key.
 
-You can also lock the **PTT** button by pressing the **Green** menu key to display the Main menu and then pressing the **Hash** (**#**) key. The keypad **and** the **PTT** can both be locked at the same time by first locking the **PTT** and then the keypad.
+You can also lock the **PTT** button by pressing the **Green** menu key to display the Main menu, then pressing the **Hash** (**#**) key. The keypad **and** the **PTT** can both be locked at the same time by first locking the **PTT** and then the keypad.
 
 ![full lock screen](media/keypad-and-ptt-locked.png)
 
@@ -837,7 +837,7 @@ You can also lock the **PTT** button by pressing the **Green** menu key to displ
 
 The firmware now supports alphanumeric text entry while creating a new contact or editing an existing one.
 
-![alphanumric entry](media/text-entry.png)
+![alphanumeric entry](media/text-entry.png)
 
 - Press **Left** and **Right** to move the cursor.
 - Press **Function** + **Left** to backspace, and **Function** + **Right** to insert a space.
@@ -869,12 +869,12 @@ Please refer to the menu map below.
 
 ![](media/menu-roadmap-3.png)
 
-- Pressing the **Green** key enters the menu system, press again to enter a menu subsection or to exit the menu.
+- Pressing the **Green** key enters the menu system; press again to enter a menu subsection or to exit the menu.
 - Press the **Red** key to step back one level or to exit the menu system.
 - The **Up** and **Down** arrow keys step up and down through the various pages of the menu system.
 - The **Left** and **Right** arrow keys will change the individual items in the menu system where they are changeable.
 - The **Blue** button on the side of the radio, known as **SK2**, is used as a **Function** key. Various features are accessed by holding the **Function** key when pressing a button on the keypad.
-- Press the **Orange** button to access the quick menu from the standby screen.
+- Press the **Orange** button to access the Quick Menu from the standby screen.
 
 
 <div style="page-break-after: always; break-after: page;"></div>
@@ -922,7 +922,7 @@ DMR signals by their nature, because they are pulse transmissions, **will not** 
 
 ### Radio Info
 
-Displays the current battery voltage and percentage, battery voltage history and radio temperature.
+Displays the current battery voltage and percentage, battery voltage history, and radio temperature.
 
 ![battery status screen](media/battery-level.png)
 
@@ -964,7 +964,7 @@ To view details on Github, append the code to <https://github.com/rogerclarkmelb
 
 ### Options
 
-This menu controls various settings specific to the firmware
+This menu controls various settings specific to the firmware.
 
 ![options menu](media/options-screen.png)
 
@@ -985,7 +985,7 @@ Options are
   - 144MHz - 148MHz,
   - 222MHz - 225MHz,
   - 420MHz - 450MHz.
-- ***CPS***: where the VHF and UHF limits set **in the CPS** are used. If the CPS band limts do not contain valid values, for example the UHF frequency band range is **less than** or **intersects** with the VHF band range, the radio will use the **Default** settings (as above)
+- ***CPS***: where the VHF and UHF limits set **in the CPS** are used. If the CPS band limits do not contain valid values, for example the UHF frequency band range is **less than** or **intersects** with the VHF band range, the radio will use the **Default** settings (as above)
 
 ![CPS band limit window](media/cps-band-limits.png)
 
@@ -1032,7 +1032,7 @@ This setting controls how the receiver stops when there is a signal during scan 
 
 - **Hold**: continuously tunes in to a channel when a signal is received.
 - **Pause**: tunes in to that signal for a specified duration (*Scan Delay*) and then resumes scan.
-- **Stop**: the scan mode will exits on the first valid received signal.
+- **Stop**: the scan mode exits on the first valid received signal.
 
 #### Squelch UHF<!-- linebreak -->
 
@@ -1190,9 +1190,9 @@ This controls the volume of the beep and other tones, and can be set from **100%
 
 This setting controls the beeps which are played at the **start** or **end**, or **both** start and end of DMR transmissions.
 
-The beep at the start of transmissions is used to confirm connection to a repeater, because it is only played when the radio enters the main transmission phase to a repeater, and not when its '**waking**' the repeater.
+The beep at the start of transmissions is used to confirm connection to a repeater, because it is only played when the radio enters the main transmission phase to a repeater, and not when it is '**waking**' the repeater.
 
-These beeps are only played through the radio's speaker, they are not transmitted via the DMR audio signal.
+These beeps are only played through the radio's speaker; they are not transmitted via the DMR audio signal.
 
 Options are:
 
@@ -1247,9 +1247,9 @@ This setting controls the **audible feedback** to button and key presses etc and
   - "**Voice L2**" and
   - "**Voice L3**", in the latter two cases the L indicates the "Level"
 
-  The voice level is used to control whether the voice prompt is played immediatly, or whether the operator needs to press button SK1 to play the which describes the last change made to the radio.
+  The voice level is used to control whether the voice prompt is played immediately, or whether the operator needs to press button SK1 to play the prompt describing the last change made to the radio.
 
-  For example. On **Voice** mode, which is **level 1**, the things which are voiced immediatly voiced are:
+  For example. On **Voice** mode, which is **level 1**, the items voiced immediately are:
 
   - Number key, and # key buttons being pressed.
   - Changes to squelch level.
@@ -1258,7 +1258,7 @@ This setting controls the **audible feedback** to button and key presses etc and
 
   Voice **level 2** has almost identical operation to Voice **level 1**, except that if a key or button is pressed while a prompt is already being played, **there will be a slight reduction in the verbosity of the next response**.
 
-  Voice **level 3**, all items voice **immediatly**, including:
+  Voice **level 3**, all items voice **immediately**, including:
   - Channel names are announced as you arrow through channels in channel mode;
   - Talkgroup names are announced as you arrow through them in DMR mode;
 
